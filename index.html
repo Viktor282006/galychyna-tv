@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галичина TV - Телерадіокомпанія</title>
+    <link rel="stylesheet" href="styleindex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Верхня панель -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="date-weather">
+                    <span id="current-date"></span>
+                    <span class="weather">Львів: +5°C, похмуро</span>
+                </div>
+                <div class="social-links">
+                    <a href="https://youtube.com/@galychynatv" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://t.me/galychyna_news" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://facebook.com/galychynatv" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/galychyna_tv" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Головне меню -->
+    <header>
+        <div class="container">
+            <div class="header-main">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <div class="logo-square"></div>
+                        <div class="logo-wave"></div>
+                    </div>
+                    <div class="logo-text">
+                        <h1>ГАЛИЧИНА</h1>
+                        <span>Телерадіокомпанія</span>
+                    </div>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#home" class="active">Головна</a></li>
+                        <li><a href="#news">Новини</a></li>
+                        <li><a href="#programs">Програми</a></li>
+                        <li><a href="#live">Прямий ефір</a></li>
+                        <li><a href="#about">Про нас</a></li>
+                        <li><a href="#contact">Контакти</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="https://www.youtube.com/watch?v=XiglhtxHT6Y" class="live-now-btn">
+                    Прямий єфір
+                    <i class="fas fa-broadcast-tower"></i>
+                    </a>
+                    <button class="menu-toggle" id="menuToggle">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Головний слайдер -->
+    <section class="hero-slider" id="home">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/%D0%A0%D0%B0%D1%82%D1%83%D1%88%D0%B0_%D0%B2_%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D1%83.jpg" alt="Львівська ратуша">
+                <div class="slide-content">
+                    <span class="category">Політика</span>
+                    <h2>Мер Івано-Франківську презентував нову програму розвитку міста</h2>
+                    <p>Інвестиції в інфраструктуру та соціальні проекти на 2024 рік</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1574267432553-4b4628081c31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Телестудія">
+                <div class="slide-content">
+                    <span class="category">Медіа</span>
+                    <h2>Новий формат вечірніх новин на "Галичина TV"</h2>
+                    <p>Інтерактивні ефіри та глибока аналітика подій</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./image/img_5513.jpg" alt="Фестиваль">
+                <div class="slide-content">
+                    <span class="category">Культура</span>
+                    <h2>Фестиваль "Львівська кава" зібрав рекордну кількість відвідувачів</h2>
+                    <p>Традиції та інновації в українській кавовій культурі</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Основний контент -->
+    <main class="container main-content">
+        <!-- Екстрені новини -->
+        <div class="breaking-news">
+            <div class="breaking-label">Екстрено</div>
+            <div class="breaking-content">
+                <marquee behavior="scroll" direction="left">
+                    <span class="news-item">• У Івано-Франківську відкрили новий дитячий садок на 200 місць • Ремонт вул. Городоцької триватиме до кінця місяця • Завтра очікується снігопад • Фестиваль українського кіно стартує 15 грудня •</span>
+                </marquee>
+            </div>
+        </div>
+
+        <!-- Секція новин -->
+        <section class="news-section" id="news">
+            <div class="section-header">
+                <h2>Останні новини</h2>
+                <a href="#all-news" class="view-all">Всі новини</a>
+            </div>
+            
+            <div class="news-grid">
+                <!-- Велика новина -->
+                <article class="news-card large">
+                    <div class="news-image">
+                        <img src="https://med-elit.com.ua/wp-content/uploads/2022/07/logo-video.webp" alt="Медичний центр">
+                        <span class="news-category">Охорона здоров'я</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>У Івано-Франківську відкрили сучасний кардіологічний центр</h3>
+                        <p class="news-excerpt">Новий медичний заклад обладнаний найсучаснішим обладнанням для діагностики та лікування захворювань серця...</p>
+                        <div class="news-full">
+                            <p>Центр розрахований на обслуговування 10 тисяч пацієнтів на рік. Тут встановлено апарати МРТ, КТ та ультразвукове обладнання останнього покоління.</p>
+                            <p>"Це важливий крок для покращення медичного обслуговування в регіоні. Тепер пацієнтам не доведеться їхати до Києва для складної діагностики", - зазначив головний лікар центру.</p>
+                            <p>Проект реалізовано за підтримки міжнародних донорів та місцевого бюджету.</p>
+                        </div>
+                        <div class="news-meta">
+                            <span class="time"><i class="far fa-clock"></i> 3 години тому</span>
+                            <span class="views"><i class="far fa-eye"></i> 2,156</span>
+                            <button class="read-more-btn" onclick="toggleNews(this)">Читати далі</button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Малі новини -->
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="./image/imgonline-com-ua-mirror-nqlkcotubmymy.jpg" alt="Кав'ярня">
+                        <span class="news-category">Культура</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Фестиваль "Львівська кава" встановив новий рекорд</h3>
+                        <p class="news-excerpt">За три дні фестиваль відвідали понад 50 тисяч людей, що на 20% більше ніж минулого року...</p>
+                        <div class="news-full">
+                            <p>У рамках фестивалю пройшли майстер-класи від бариста, конкурси кавових напоїв та ярмарок локальних виробників.</p>
+                            <p>Головною новинкою цьогорічного фестивалю став конкурс на найкращу авторську кавову суміш.</p>
+                        </div>
+                        <div class="news-meta">
+                            <span class="time"><i class="far fa-clock"></i> 5 годин тому</span>
+                            <span class="views"><i class="far fa-eye"></i> 3,421</span>
+                            <button class="read-more-btn" onclick="toggleNews(this)">Читати далі</button>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1459865264687-595d652de67e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Футбол">
+                        <span class="news-category">Спорт</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>"Карпати" перемогли у дербі Львова</h3>
+                        <p class="news-excerpt">У матчі 15-го туру першої ліги "Карпати" обіграли "Львів" з рахунком 2:1...</p>
+                        <div class="news-full">
+                            <p>Голи забивали: Іван Петренко (15 хвилина) та Олександр Коваль (72 хвилина) у ворота "Львова". Єдиний гол "Львова" на рахунку Дмитра Шевченка.</p>
+                            <p>Після цієї перемоги "Карпати" піднялися на 3-тє місце в турнірній таблиці.</p>
+                        </div>
+                        <div class="news-meta">
+                            <span class="time"><i class="far fa-clock"></i> 8 годин тому</span>
+                            <span class="views"><i class="far fa-eye"></i> 4,892</span>
+                            <button class="read-more-btn" onclick="toggleNews(this)">Читати далі</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Секція програм -->
+        <section class="programs-section" id="programs">
+            <div class="section-header">
+                <h2>Наші програми</h2>
+                <a href="#all-programs" class="view-all">Всі програми</a>
+            </div>
+            
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Головні новини</h3>
+                    <p>Щоденна інформаційна програма з останніми подіями регіону та країни</p>
+                    <div class="program-schedule">
+                        <span class="schedule-time">Щодня о 08:00, 12:00, 18:00</span>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Інтерв'ю дня</h3>
+                    <p>Ексклюзивні розмови з цікавими людьми Галичини</p>
+                    <div class="program-schedule">
+                        <span class="schedule-time">Пн-Пт о 10:00</span>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Культурна панорама</h3>
+                    <p>Огляди культурних подій, виставок, концертів та фестивалів</p>
+                    <div class="program-schedule">
+                        <span class="schedule-time">Вівторок, Четвер о 14:00</span>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-basketball-ball"></i>
+                    </div>
+                    <h3>Спортивний огляд</h3>
+                    <p>Новини спорту, аналітика матчів та інтерв'ю з атлетами</p>
+                    <div class="program-schedule">
+                        <span class="schedule-time">Пн, Ср, Пт о 16:00</span>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3>Історії Галичини</h3>
+                    <p>Документальний цикл про видатних людей та події регіону</p>
+                    <div class="program-schedule">
+                        <span class="schedule-time">Неділя о 20:00</span>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Смаки Галичини</h3>
+                    <p>Кулінарна програма про традиційну та сучасну кухню регіону</p>
+                    <div class="program-schedule">
+                        <span class="schedule-time">Субота о 12:00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Відео секція -->
+        <section class="video-section" id="live">
+            <div class="section-header">
+                <h2>Відео</h2>
+                <a href="https://youtube.com/@galychynatv" target="_blank" class="view-all">Всі відео на YouTube</a>
+            </div>
+            
+            <div class="video-grid">
+                <div class="video-item main-video">
+                    <div class="video-player">
+                        <iframe 
+                            src="./video/У Львові зʼявиться Центр клінічних досліджень_ яка послуга стане доступнішою.mp4" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h3>Репортаж: Відкриття нового кардіоцентру у Львові</h3>
+                </div>
+                
+                <div class="video-sidebar">
+                    <div class="video-item small">
+                        <div class="video-player">
+                            <iframe 
+                                src="./video/Нове обладнання для дитячої лікарні.mp4" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h4>Нове обладнання лікарні</h4>
+                    </div>
+                    
+                    <div class="video-item small">
+                        <div class="video-player">
+                            <iframe 
+                                src="./video/Впевнена перемога в чемпіонаті «КДЮСШ-Південне» vs «Бахмутський коледж».Цілком с.mp4" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h4>Впевнена перемога в чемпіонаті «КДЮСШ-Південне» vs «Бахмутський коледж»</h4>
+                    </div>
+                    
+                    <div class="video-item small">
+                        <div class="video-player">
+                            <iframe 
+                                src="./video/Спільна робота задля безпеки_ на РАЕС провели протиаварійне тренування.mp4" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h4>Спільна робота задля безпеки: на РАЕС провели протиаварійне тренування</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Прямий ефір -->
+        <section class="live-section">
+            <div class="section-header">
+                <h2>Прямий ефір</h2>
+                
+            </div>
+            <div class="live-container">
+                <div class="live-placeholder">
+                    <i class="fas fa-satellite-dish"></i>
+                    <h3>Прямий ефір "Галичина TV"</h3>
+                    <p>Ефір розпочнеться о 18:00</p>
+
+                </div>
+                <a href="https://www.youtube.com/watch?v=XiglhtxHT6Y" class="live-now-btn">
+                    Дивитися зараз
+                    <i class="fas fa-broadcast-tower"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Секція "Про нас" -->
+        <section class="about-section" id="about">
+            <div class="section-header">
+                <h2>Про нас</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Телерадіокомпанія "Галичина"</h3>
+                    <p>Ми - провідна регіональна телерадіокомпанія, яка вже понад 25 років надає якісний інформаційний та розважальний контент для мешканців Галичини.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-bullhorn"></i>
+                            <div>
+                                <h4>Місія</h4>
+                                <p>Об'єднувати громаду, інформувати про найважливіші події та зберігати культурну спадщину регіону</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="fas fa-eye"></i>
+                            <div>
+                                <h4>Бачення</h4>
+                                <p>Стати основним джерелом інформації та розваг для мешканців Галичини</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h4>Цінності</h4>
+                                <p>Об'єктивність, професійність, інновації та відданість регіону</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">років на ринку</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">професійних журналістів</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1M+</span>
+                            <span class="stat-label">гледачів</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Наша команда">
+                </div>
+            </div>
+        </section>
+
+        <!-- Секція контактів -->
+        <section class="contact-section" id="contact">
+            <div class="section-header">
+                <h2>Контакти</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Наші контакти</h3>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Адреса:</strong>
+                            <p>м. Львів, вул. Личаківська, 123</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Телефон:</strong>
+                            <p>+38 (032) 123-45-67</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email:</strong>
+                            <p>info@galtv.ua</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Години роботи:</strong>
+                            <p>Пн-Пт: 9:00-18:00<br>Сб: 10:00-15:00<br>Нд: вихідний</p>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map"></i>
+                            <p>Карта розташування</p>
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.6436083975004!2d24.712575636448467!3d48.92218198933225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c16ceb19c91b%3A0x277ee1df853fe915!2z0JjQstCw0L3Qvi3QpNGA0LDQvdC60L7QstGB0LrQuNC5INCz0L7RgNC-0LTRgdC60L7QuSDRgdC-0LLQtdGC!5e0!3m2!1sru!2sua!4v1764258552537!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+    <h3>Напишіть нам</h3>
+    <form id="contactForm">
+        <!-- Ім'я -->
+        <div class="form-group">
+            <label for="name">Ваше ім'я *</label>
+            <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+            <span class="error-message" id="name-error"></span>
+            <span class="helper-text">Тільки літери, мінімум 2 символи</span>
+        </div>
+        
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Ваш email *</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            <span class="error-message" id="email-error"></span>
+            <span class="helper-text">Наприклад: example@mail.com</span>
+        </div>
+        
+        <!-- Телефон -->
+        <div class="form-group">
+            <label for="phone">Ваш телефон *</label>
+            <input type="tel" id="phone" name="phone" placeholder="+380 XX XXX XX XX" required>
+            <span class="error-message" id="phone-error"></span>
+            <span class="helper-text">Формат: +380 або 0XX XXX XX XX</span>
+        </div>
+        
+        <!-- Повідомлення -->
+        <div class="form-group">
+            <label for="message">Ваше повідомлення *</label>
+            <textarea id="message" name="message" placeholder="Напишіть ваше повідомлення тут..." rows="5" required></textarea>
+            <span class="error-message" id="message-error"></span>
+            <span class="counter">
+                <span id="char-count">0</span>/500 символів
+            </span>
+        </div>
+        
+        <!-- Кнопка відправки -->
+        <button type="submit" class="btn" id="submit-btn">
+            <i class="fas fa-paper-plane"></i> Надіслати повідомлення
+        </button>
+        
+        <!-- Повідомлення про успіх -->
+        <div id="success-message" class="success-message" style="display: none;"></div>
+    </form>
+</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <div class="logo-square"></div>
+                            <div class="logo-wave"></div>
+                        </div>
+                        <div class="logo-text">
+                            <h3>ГАЛИЧИНА</h3>
+                            <span>Телерадіокомпанія</span>
+                        </div>
+                    </div>
+                    <p>Перша регіональна телерадіокомпанія Галичини. Новини, аналітика, репортажі.</p>
+                    <div class="footer-social">
+                        <a href="https://youtube.com/@galychynatv" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://t.me/galychyna_news" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="https://facebook.com/galychynatv" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/galychyna_tv" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Розділи</h4>
+                    <ul>
+                        <li><a href="#home">Головна</a></li>
+                        <li><a href="#news">Новини</a></li>
+                        <li><a href="#programs">Програми</a></li>
+                        <li><a href="#live">Прямий ефір</a></li>
+                        <li><a href="#about">Про нас</a></li>
+                        <li><a href="#contact">Контакти</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Контакти</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> м. Львів, вул. Личаківська, 123</p>
+                        <p><i class="fas fa-phone"></i> +38 (032) 123-45-67</p>
+                        <p><i class="fas fa-envelope"></i> info@galtv.ua</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Підписатися</h4>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Ваш email">
+                        <button class="subscribe-btn">Підписатися</button>
+                    </div>
+                    <div class="app-links">
+                        <a href="#" class="app-btn">
+                            <i class="fab fa-google-play"></i>
+                            <span>Google Play</span>
+                        </a>
+                        <a href="#" class="app-btn">
+                            <i class="fab fa-app-store"></i>
+                            <span>App Store</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Телерадіокомпанія "Галичина". Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальне вікно для прямого ефіру -->
+    <div id="liveModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLiveStream()">&times;</span>
+            <h2>Прямий ефір "Галичина TV"</h2>
+            <div class="live-stream">
+                <iframe 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="jsindex.js"></script>
+    
+</body>
+</html>
